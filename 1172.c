@@ -1,19 +1,21 @@
 #include <stdio.h>
-#include <math.h>
-int main()
-{
-    int x,i,ql,a,b;
-    scanf("%d",&x);
-    ql = pow(2, x);
-    int [ql][x];
-    for (i = 0; i < ql; i++)
+int main(){
+    int X[10];
+    int i, j;
+    for (i = 0; i < 10; i++)
     {
-        for (j = 0; j < x; j++)
-        {
-            
-        }
-        
+        scanf("%d",&X[i]);
     }
-    
+    for (j = 0; j < 10; j++)
+    {
+        if (X[j]<=0)
+        {
+            printf("X[%d] = 1\n",j);
+        }
+        else
+        {
+            printf("X[%d] = %d\n",j,X[j]);
+        }
+    }
     return 0;
 }
